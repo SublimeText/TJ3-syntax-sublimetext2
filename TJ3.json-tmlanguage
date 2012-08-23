@@ -21,21 +21,22 @@
 	  "end": "\"",
 	  "comment": "Strings between two double quotes"
 	},
+	{ "name": "entity.name.function.preprocessor.tj3",
+	  "begin": "task +",
+	  "end": "[a-zA-Z0-9_] ",
+	  "comment": "Task name"
+	},
 	{ "name": "storage.type.tj3",
-	  "begin": "task ",
-	  "end": "[a-zA-Z0-9] ",
+	  "match": "task +",
 	  "comment": "Task definition"
 	},
-	{ "name": "entity.name.function.preprocessor.tj3",
-	  "match": "task[a-zA-Z0-9]\\w",
-	  "comment": "Name of the task (before the string)"
-	},
+
 	{ "match": "\\#.*",
 	  "name": "comment.source.tj3",
 	  "comment": "Comments, meaning everything after the hash"
 	},
 	{ "name": "keyword.control.tj3",
-	  "match": "(allocate)|(effort)|(flags)|(priority)|(start)",
+	  "match": "(allocate +)|(effort +)|(flags +)|(priority +)|(start +)",
 	  "comment": "Keywords inside a task like flags, priority, effort, "
 	}
   ],

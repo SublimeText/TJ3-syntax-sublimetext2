@@ -51,21 +51,21 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>task </string>
+			<string>task +</string>
 			<key>comment</key>
-			<string>Task definition</string>
+			<string>Task name</string>
 			<key>end</key>
-			<string>[a-zA-Z0-9] </string>
+			<string>[a-zA-Z0-9_] </string>
 			<key>name</key>
-			<string>storage.type.tj3</string>
+			<string>entity.name.function.preprocessor.tj3</string>
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>Name of the task (before the string)</string>
+			<string>Task definition</string>
 			<key>match</key>
-			<string>task[a-zA-Z0-9]\w</string>
+			<string>task +</string>
 			<key>name</key>
-			<string>entity.name.function.preprocessor.tj3</string>
+			<string>storage.type.tj3</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -79,7 +79,7 @@
 			<key>comment</key>
 			<string>Keywords inside a task like flags, priority, effort, </string>
 			<key>match</key>
-			<string>(allocate)|(effort)|(flags)|(priority)|(start)</string>
+			<string>(allocate +)|(effort +)|(flags +)|(priority +)|(start +)</string>
 			<key>name</key>
 			<string>keyword.control.tj3</string>
 		</dict>

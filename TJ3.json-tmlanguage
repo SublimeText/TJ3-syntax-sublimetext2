@@ -1,0 +1,43 @@
+{ "name": "TaskJuggler III",
+  "scopeName": "source.tj3",
+  "fileTypes": ["tji", "tjp"],
+  "patterns": [
+  	{ "name": "constant.language.tj3",
+	  "begin": "project ",
+	  "end": "\\d{4}-\\d{2}-\\d{2} - \\d{4}-\\d{2}-\\d{2} ",
+	  "comment": "Project definition"
+	},
+	{ "name": "meta.preprocessor.macro.tj3",
+	  "match": "include",
+	  "comment": "Include statement for including files"
+	},
+	{ "name": "constant.language.tj3",
+	  "begin": "task project",
+	  "end": "$",
+	  "comment": "Subproject definition"
+	},
+	{ "name": "string.punctuation.tj3",
+	  "begin": "\"",
+	  "end": "\"",
+	  "comment": "Strings between two double quotes"
+	},
+	{ "name": "storage.type.tj3",
+	  "begin": "task ",
+	  "end": "[a-zA-Z0-9] ",
+	  "comment": "Task definition"
+	},
+	{ "name": "entity.name.function.preprocessor.tj3",
+	  "match": "task[a-zA-Z0-9]\\w",
+	  "comment": "Name of the task (before the string)"
+	},
+	{ "match": "\\#.*",
+	  "name": "comment.source.tj3",
+	  "comment": "Comments, meaning everything after the hash"
+	},
+	{ "name": "keyword.control.tj3",
+	  "match": "(allocate)|(effort)|(flags)|(priority)|(start)",
+	  "comment": "Keywords inside a task like flags, priority, effort, "
+	}
+  ],
+  "uuid": "237ab900-915a-43cf-aead-96d9f9f12e1c"
+}

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>tji</string>
+		<string>tjp</string>
+	</array>
+	<key>name</key>
+	<string>TaskJuggler III</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>begin</key>
+			<string>project </string>
+			<key>comment</key>
+			<string>Project definition</string>
+			<key>end</key>
+			<string>\d{4}-\d{2}-\d{2} - \d{4}-\d{2}-\d{2} </string>
+			<key>name</key>
+			<string>constant.language.tj3</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Include statement for including files</string>
+			<key>match</key>
+			<string>include</string>
+			<key>name</key>
+			<string>meta.preprocessor.macro.tj3</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>task project</string>
+			<key>comment</key>
+			<string>Subproject definition</string>
+			<key>end</key>
+			<string>$</string>
+			<key>name</key>
+			<string>constant.language.tj3</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>"</string>
+			<key>comment</key>
+			<string>Strings between two double quotes</string>
+			<key>end</key>
+			<string>"</string>
+			<key>name</key>
+			<string>string.punctuation.tj3</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>task +</string>
+			<key>comment</key>
+			<string>Task name</string>
+			<key>end</key>
+			<string>[a-zA-Z0-9_] </string>
+			<key>name</key>
+			<string>entity.name.function.preprocessor.tj3</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Task definition</string>
+			<key>match</key>
+			<string>task +</string>
+			<key>name</key>
+			<string>storage.type.tj3</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Comments, meaning everything after the hash</string>
+			<key>match</key>
+			<string>\#.*</string>
+			<key>name</key>
+			<string>comment.source.tj3</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Keywords inside a task like flags, priority, effort, </string>
+			<key>match</key>
+			<string>(allocate +)|(effort +)|(flags +)|(priority +)|(start +)</string>
+			<key>name</key>
+			<string>keyword.control.tj3</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.tj3</string>
+	<key>uuid</key>
+	<string>237ab900-915a-43cf-aead-96d9f9f12e1c</string>
+</dict>
+</plist>

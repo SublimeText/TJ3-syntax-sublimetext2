@@ -1,0 +1,9 @@
+<snippet>
+	<description>scenario ... "..."</description>
+    <content><![CDATA[scenario ${1:name} "${2:description}" {
+	projection {${3:strict}}
+	}
+}]]></content>
+    <tabTrigger>sce</tabTrigger>
+    <scope>source.tj3</scope> 
+</snippet>

@@ -1,0 +1,11 @@
+<snippet>
+	<description>project ... "..." "v" start - end</description>
+    <content><![CDATA[project ${1:name} "${2:description}" "${3:version}" ${4:2012}-${5:01}-${6:01} - ${7:2013}-${8:12}-${9:31} {
+
+    scenario plan "Plan" {
+	${10:#...}
+	}
+}]]></content>
+    <tabTrigger>pro</tabTrigger>
+    <scope>source.tj3</scope> 
+</snippet>

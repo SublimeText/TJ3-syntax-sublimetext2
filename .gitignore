@@ -1,5 +1,8 @@
 ~$*.*
 *.*
 !TJ3.*
-!.gitignore
+!TJ3-.*
+!readme*
+*project
+*workspace
 *.*.cache

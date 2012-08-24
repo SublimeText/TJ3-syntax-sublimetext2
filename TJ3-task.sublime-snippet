@@ -1,0 +1,8 @@
+<snippet>
+	<description>task ... "..." {}</description>
+    <content><![CDATA[task ${1:taskname} "${2:taskdescription}" {
+	${3:...}
+}]]></content>
+    <tabTrigger>tas</tabTrigger>
+    <scope>source.tj3</scope> 
+</snippet>

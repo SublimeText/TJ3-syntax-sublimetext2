@@ -30,7 +30,6 @@
 	  "match": "task +",
 	  "comment": "Task definition"
 	},
-
 	{ "match": "\\#.*",
 	  "name": "comment.source.tj3",
 	  "comment": "Comments, meaning everything after the hash"

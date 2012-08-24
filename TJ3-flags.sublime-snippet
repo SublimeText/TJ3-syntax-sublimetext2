@@ -1,0 +1,7 @@
+<snippet>
+	<description>flags ...</description>
+    <content><![CDATA[flags ${1:flag}]]>
+    </content>
+    <tabTrigger>fla</tabTrigger>
+    <scope>source.tj3</scope> 
+</snippet>

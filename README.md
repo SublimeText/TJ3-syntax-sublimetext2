@@ -1,5 +1,4 @@
 TJ3-syntax-sublimetext2
-
 =======================
 
 This is the very short readme how to install the syntax highlighting for JaskJuggler 3 using Sublime Text 2.

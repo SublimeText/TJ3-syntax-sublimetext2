@@ -11,6 +11,7 @@ TJ3.tmLanguage
 
 under Windows XP the user directory is at:
 C:\Documents and Settings\yourusername\Application Data\Sublime Text 2\Packages\User
+
 under Linux the user directory is at:
 ~/.config/sublime-text-2/Packages/User
 
@@ -20,4 +21,3 @@ DEVELOPING:
 Please add or enhance the language file.
 
 Instructions for installing AAAPackageDev.sublime-package and using via the sublime text 2 website http://sublime-text-unofficial-documentation.readthedocs.org/en/latest/extensibility/syntaxdefs.html?highlight=syntax.
-

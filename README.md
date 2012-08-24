@@ -1,4 +1,5 @@
 TJ3-syntax-sublimetext2
+
 =======================
 
 This is the very short readme how to install the syntax highlighting for JaskJuggler 3 using Sublime Text 2.
@@ -16,3 +17,4 @@ DEVELOPING:
 Please add or enhance the language file.
 
 Instructions for installing AAAPackageDev.sublime-package and using via the sublime text 2 website http://sublime-text-unofficial-documentation.readthedocs.org/en/latest/extensibility/syntaxdefs.html?highlight=syntax.
+

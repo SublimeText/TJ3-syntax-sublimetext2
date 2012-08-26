@@ -19,7 +19,7 @@
 			<key>end</key>
 			<string>\d{4}-\d{2}-\d{2} - \d{4}-\d{2}-\d{2} </string>
 			<key>name</key>
-			<string>constant.language.tj3</string>
+			<string>storage.type.tj3</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -59,7 +59,23 @@
 				</dict>
 			</dict>
 			<key>comment</key>
-			<string>Task is like the start of a function. '1' is the name of the function</string>
+			<string>Task is like the start of a function. '1' is the name of the task</string>
+			<key>match</key>
+			<string>project +([A-Za-z][A-Za-z0-9_]+)</string>
+			<key>name</key>
+			<string>storage.type.tj3</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.preprocessor.tj3</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Task is like the start of a function. '1' is the name of the task</string>
 			<key>match</key>
 			<string>task +([A-Za-z][A-Za-z0-9_]+)</string>
 			<key>name</key>
@@ -75,7 +91,7 @@
 				</dict>
 			</dict>
 			<key>comment</key>
-			<string>Task is like the start of a function. '1' is the name of the function</string>
+			<string>Scenario is like the start of a function. '1' is the name of the scenatio</string>
 			<key>match</key>
 			<string>scenario +([A-Za-z][A-Za-z0-9_]+)</string>
 			<key>name</key>
@@ -99,11 +115,27 @@
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>Keywords inside a task like flags, priority, effort, </string>
+			<string>Keywords inside a task like flags, priority, effort</string>
 			<key>match</key>
-			<string>(allocate +)|(effort +)|(flags +)|(priority +)|(start +)</string>
+			<string>(allocate +)|(depends )|(duration +)|(effort +)|(flags +)|(priority +)|(start +)</string>
 			<key>name</key>
 			<string>keyword.control.tj3</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>constant.numeric.tj3</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>time as in days, weeks, months etc</string>
+			<key>match</key>
+			<string>\b((([0-9]+\.?[0-9]*)|(\.[0-9]+))((e|E)(\+|-)?[0-9]+)?)(d|w|h|m)?\b</string>
+			<key>name</key>
+			<string>entity.name.function.preprocessor.tj3</string>
 		</dict>
 	</array>
 	<key>scopeName</key>

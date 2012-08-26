@@ -3,6 +3,7 @@
 !TJ3.*
 !TJ3-.*
 !readme*
+!*.sublime-snippet
 *project
 *workspace
 *.*.cache

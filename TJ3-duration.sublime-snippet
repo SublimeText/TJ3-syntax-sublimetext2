@@ -1,0 +1,7 @@
+<snippet>
+	<description>duration ...</description>
+    <content><![CDATA[duration ${1:time}]]>
+    </content>
+    <tabTrigger>dur</tabTrigger>
+    <scope>source.tj3</scope> 
+</snippet>

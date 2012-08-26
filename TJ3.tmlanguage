@@ -50,20 +50,42 @@
 			<string>string.punctuation.tj3</string>
 		</dict>
 		<dict>
-			<key>begin</key>
-			<string>task +</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.preprocessor.tj3</string>
+				</dict>
+			</dict>
 			<key>comment</key>
-			<string>Task name</string>
-			<key>end</key>
-			<string>[a-zA-Z0-9_] </string>
+			<string>Task is like the start of a function. '1' is the name of the function</string>
+			<key>match</key>
+			<string>task +([A-Za-z][A-Za-z0-9_]+)</string>
 			<key>name</key>
-			<string>entity.name.function.preprocessor.tj3</string>
+			<string>storage.type.tj3</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.preprocessor.tj3</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Task is like the start of a function. '1' is the name of the function</string>
+			<key>match</key>
+			<string>scenario +([A-Za-z][A-Za-z0-9_]+)</string>
+			<key>name</key>
+			<string>keyword.type.tj3</string>
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>Task definition</string>
+			<string>Task definition, highlighting when typung the 'k' even before the space afterwards</string>
 			<key>match</key>
-			<string>task +</string>
+			<string>task</string>
 			<key>name</key>
 			<string>storage.type.tj3</string>
 		</dict>

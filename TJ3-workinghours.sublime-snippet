@@ -1,0 +1,7 @@
+<snippet>
+	<description>workinghours</description>
+    <content><![CDATA[workinghours mon,tue,wed,thu,fri 08:00 -12:00 , 13:00 - 17:00]]>
+    </content>
+    <tabTrigger>wor</tabTrigger>
+    <scope>source.tj3</scope> 
+</snippet>

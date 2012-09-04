@@ -1,0 +1,11 @@
+<snippet>
+	<description>taskreport ... "..." {}</description>
+    <content><![CDATA[taskreport ${1:taskreportname} "${2:taskreportdescription}" {
+	columns bsi { title 'WBS' },
+          name, start, end, effort, cost,
+          revenue, chart { ${TaskTip} }
+          ${3:#put other code here}
+}]]></content>
+    <tabTrigger>tar</tabTrigger>
+    <scope>source.tj3</scope> 
+</snippet>

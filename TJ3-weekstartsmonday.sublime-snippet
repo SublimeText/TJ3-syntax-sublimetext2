@@ -1,0 +1,7 @@
+<snippet>
+	<description>weekstartsmonday</description>
+    <content><![CDATA[weekstartsmonday]]>
+    </content>
+    <tabTrigger>wee</tabTrigger>
+    <scope>source.tj3</scope> 
+</snippet>

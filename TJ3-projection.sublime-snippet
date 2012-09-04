@@ -1,0 +1,7 @@
+<snippet>
+	<description>projection ...</description>
+    <content><![CDATA[projection {${1:strict}}]]>
+    </content>
+    <tabTrigger>pro</tabTrigger>
+    <scope>source.tj3</scope> 
+</snippet>

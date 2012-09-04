@@ -1,0 +1,10 @@
+{
+	"cmd": ["tj3", "${file}"],
+	"file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+	"working_dir": "${file_path}",
+	"selector": "source.tj3",
+	"windows":
+    {
+        "cmd": ["tj3.bat", "${file}"]
+    }
+}

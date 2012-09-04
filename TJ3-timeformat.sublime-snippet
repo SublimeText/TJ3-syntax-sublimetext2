@@ -1,0 +1,7 @@
+<snippet>
+	<description>timeformat ...</description>
+    <content><![CDATA[timeformat ${1:"%Y-%m-%d"}]]>
+    </content>
+    <tabTrigger>tim</tabTrigger>
+    <scope>source.tj3</scope> 
+</snippet>

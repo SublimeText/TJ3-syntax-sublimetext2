@@ -61,7 +61,7 @@
 			<key>comment</key>
 			<string>Task is like the start of a function. '1' is the name of the task</string>
 			<key>match</key>
-			<string>project +([A-Za-z][A-Za-z0-9_]+)</string>
+			<string>\b(project +)([A-Za-z][A-Za-z0-9_]+)</string>
 			<key>name</key>
 			<string>storage.type.tj3</string>
 		</dict>
@@ -77,7 +77,7 @@
 			<key>comment</key>
 			<string>Task is like the start of a function. '1' is the name of the task</string>
 			<key>match</key>
-			<string>task +([A-Za-z][A-Za-z0-9_]+)</string>
+			<string>((columns +)|(resourcereport +)|(task +)|(taskreport +)|(textreport +))([A-Za-z][A-Za-z0-9_]+)</string>
 			<key>name</key>
 			<string>storage.type.tj3</string>
 		</dict>
@@ -98,10 +98,26 @@
 			<string>keyword.type.tj3</string>
 		</dict>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.preprocessor.tj3</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>projection is like the start of a function. '1' is the name of the scenatio</string>
+			<key>match</key>
+			<string>projection +\{(strict)|</string>
+			<key>name</key>
+			<string>keyword.type.tj3</string>
+		</dict>
+		<dict>
 			<key>comment</key>
 			<string>Task definition, highlighting when typung the 'k' even before the space afterwards</string>
 			<key>match</key>
-			<string>task</string>
+			<string>\b((columns)|(resourcereport)|(task)|(taskreport)|(textreport))</string>
 			<key>name</key>
 			<string>storage.type.tj3</string>
 		</dict>
@@ -117,9 +133,25 @@
 			<key>comment</key>
 			<string>Keywords inside a task like flags, priority, effort</string>
 			<key>match</key>
-			<string>(allocate +)|(depends )|(duration +)|(effort +)|(flags +)|(priority +)|(start +)</string>
+			<string>(mon)|(tue)|(wed)|(thu)|(fri)|(sat)|(sun)</string>
+			<key>name</key>
+			<string>constant.numeric.tj3</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Keywords inside a task like flags, priority, effort</string>
+			<key>match</key>
+			<string>(allocate ?)|(celltext ?)|(currency ?)|(columns ?)|(cost ?)|(depends ?)|(duration ?)|(effort ?)|(end ?)|(flags ?)|(formats ?)|(minslackrate ?)|(priority ?)|(start ?)|(timeformat ?)|(timezone ?)|(weekstartsmonday ?)|(workinghours ?)</string>
 			<key>name</key>
 			<string>keyword.control.tj3</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>constants</string>
+			<key>match</key>
+			<string>(attribute ?)|(attributes ?)|(html ?)|(name ?)|(revenue ?)</string>
+			<key>name</key>
+			<string>keyword.constant.tj3</string>
 		</dict>
 		<dict>
 			<key>captures</key>

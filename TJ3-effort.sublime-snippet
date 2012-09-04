@@ -1,0 +1,7 @@
+<snippet>
+	<description>effort ...</description>
+    <content><![CDATA[allocate ${1:time}]]>
+    </content>
+    <tabTrigger>eff</tabTrigger>
+    <scope>source.tj3</scope> 
+</snippet>

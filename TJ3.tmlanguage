@@ -31,16 +31,6 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>task project</string>
-			<key>comment</key>
-			<string>Subproject definition</string>
-			<key>end</key>
-			<string>$</string>
-			<key>name</key>
-			<string>constant.language.tj3</string>
-		</dict>
-		<dict>
-			<key>begin</key>
 			<string>"</string>
 			<key>comment</key>
 			<string>Strings between two double quotes</string>
@@ -48,22 +38,6 @@
 			<string>"</string>
 			<key>name</key>
 			<string>string.punctuation.tj3</string>
-		</dict>
-		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>entity.name.function.preprocessor.tj3</string>
-				</dict>
-			</dict>
-			<key>comment</key>
-			<string>Task is like the start of a function. '1' is the name of the task</string>
-			<key>match</key>
-			<string>\b(project +)([A-Za-z][A-Za-z0-9_]+)</string>
-			<key>name</key>
-			<string>storage.type.tj3</string>
 		</dict>
 		<dict>
 			<key>captures</key>
@@ -115,14 +89,6 @@
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>Task definition, highlighting when typung the 'k' even before the space afterwards</string>
-			<key>match</key>
-			<string>\b((columns)|(resourcereport)|(task)|(taskreport)|(textreport))</string>
-			<key>name</key>
-			<string>storage.type.tj3</string>
-		</dict>
-		<dict>
-			<key>comment</key>
 			<string>Comments, meaning everything after the hash</string>
 			<key>match</key>
 			<string>\#.*</string>
@@ -152,6 +118,22 @@
 			<string>(attribute ?)|(attributes ?)|(html ?)|(name ?)|(revenue ?)</string>
 			<key>name</key>
 			<string>keyword.constant.tj3</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.preprocessor.tj3</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Taskroot with tasks separated by . (dot)</string>
+			<key>match</key>
+			<string>(taskroot )([A-Za-z0-9].*)</string>
+			<key>name</key>
+			<string>storage.type.tj3</string>
 		</dict>
 		<dict>
 			<key>captures</key>

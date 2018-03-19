@@ -13,11 +13,11 @@
 	<array>
 		<dict>
 			<key>begin</key>
-			<string>project </string>
+			<string>\bproject\b</string>
 			<key>comment</key>
 			<string>Project definition</string>
 			<key>end</key>
-			<string>\d{4}-\d{2}-\d{2} - \d{4}-\d{2}-\d{2} </string>
+			<string>\{</string>
 			<key>name</key>
 			<string>storage.type.tj3</string>
 		</dict>
